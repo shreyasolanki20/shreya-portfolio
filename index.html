@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Shreya Solanki Portfolio</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top">Shreya Solanki</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+
+  <div class="hero">
+    <div>
+      <p class="eyebrow">Computer Engineering Student</p>
+      <h1>Shreya Solanki</h1>
+      <p class="lead">Fresher interested in Python and backend development. I build web apps with FastAPI and MySQL, and I am learning machine learning through real-world projects.</p>
+      <div class="actions">
+        <a class="btn primary" href="#projects">View projects</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="portrait">
+      <img src="shreya.jpg" alt="Portrait of Shreya Solanki" width="600" height="600">
+    </div>
+  </div>
+
+  <section id="about" class="about">
+    <h2>About me</h2>
+    <p>I am a Computer Engineering student currently in my 5th semester and a fresher with an interest in Python and backend development. I have basic knowledge of Python and FastAPI and am learning and practicing through real-world projects. I am a quick learner, and eager to gain practical industry experience while improving my technical and problem-solving skills.</p>
+    <div class="facts">
+      <div class="fact"><b>5th semester</b><span>B.Tech, Computer Engineering</span></div>
+      <div class="fact"><b>CGPA 8.88</b><span>Diploma in Computer Engineering</span></div>
+      <div class="fact"><b>Surat, Gujarat</b><span>Gujarat Technological University</span></div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="timeline">
+      <article class="edu">
+        <div class="when">2025 – 2028</div>
+        <div>
+          <h3>Bachelor of Technology in Computer Engineering</h3>
+          <p>Dr. S &amp; S.S. Gandhi Government Engineering College, Surat</p>
+          <p>Gujarat Technological University</p>
+        </div>
+      </article>
+      <article class="edu">
+        <div class="when">June 2025</div>
+        <div>
+          <h3>Diploma in Computer Engineering</h3>
+          <p>Government Polytechnic for Girls, Surat</p>
+          <p>Gujarat Technological University</p>
+          <span class="tag">CGPA 8.88</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+
+      <article class="project">
+        <div class="status">In progress</div>
+        <h3>Water Intelligence Platform</h3>
+        <ul class="stack" aria-label="Technologies">
+          <li>Python</li><li>Streamlit</li><li>Machine Learning</li>
+        </ul>
+        <ul class="points">
+          <li>Developing a real-world Water Intelligence Platform using Python and Streamlit.</li>
+          <li>Applying Machine Learning techniques to analyze water-related data and generate insights.</li>
+          <li>Building an interactive dashboard to present data and ML-based results in a user-friendly way.</li>
+          <li>Working on data preprocessing, model development, and prediction as part of the project.</li>
+        </ul>
+      </article>
+
+      <article class="project">
+        <div class="status">Completed</div>
+        <h3>Personalized Learning Platform (PAL)</h3>
+        <ul class="stack" aria-label="Technologies">
+          <li>HTML</li><li>CSS</li><li>JavaScript</li><li>FastAPI</li><li>MySQL</li>
+        </ul>
+        <ul class="points">
+          <li>Developed a web-based learning platform using HTML, CSS, JavaScript, FastAPI, and MySQL.</li>
+          <li>Implemented user authentication, course enrollment, lesson progress tracking, and quiz results.</li>
+          <li>Integrated frontend dashboards with backend APIs to display real-time course and lesson completion data.</li>
+          <li>Built a Progress Dashboard showing enrolled courses, completed lessons, quiz scores, and learning progress.</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical skills</h2>
+    <div class="skills">
+      <div class="skill-group"><h3>Programming</h3><ul><li>Python</li><li>Java</li></ul></div>
+      <div class="skill-group"><h3>Backend</h3><ul><li>FastAPI</li></ul></div>
+      <div class="skill-group"><h3>Database</h3><ul><li>MySQL</li></ul></div>
+      <div class="skill-group"><h3>Machine Learning</h3><ul><li>Machine Learning</li><li>Data Preprocessing</li><li>Model Training</li></ul></div>
+      <div class="skill-group"><h3>Frontend</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></div>
+      <div class="skill-group"><h3>Tools</h3><ul><li>VS Code</li></ul></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact-list">
+      <div class="contact-item"><small>Email</small><a href="mailto:shreyasolanki205@gmail.com">shreyasolanki205@gmail.com</a></div>
+      <div class="contact-item"><small>Phone</small><a href="tel:+919157964115">9157964115</a></div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Shreya Solanki · Computer Engineering · Surat, Gujarat</div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  var btn = document.getElementById('theme-toggle');
+  function systemDark() {
+    return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  }
+  function current() {
+    return root.getAttribute('data-theme') || (systemDark() ? 'dark' : 'light');
+  }
+  function paint() {
+    var dark = current() === 'dark';
+    btn.textContent = dark ? 'Light mode' : 'Dark mode';
+    btn.setAttribute('aria-pressed', dark ? 'true' : 'false');
+  }
+  try {
+    var saved = localStorage.getItem('portfolio-theme');
+    if (saved === 'dark' || saved === 'light') root.setAttribute('data-theme', saved);
+  } catch (e) {}
+  btn.addEventListener('click', function () {
+    var next = current() === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('portfolio-theme', next); } catch (e) {}
+    paint();
+  });
+  paint();
+})();
+</script>
+
+</body>
+</html>
